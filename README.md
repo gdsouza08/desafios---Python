@@ -1,7 +1,5 @@
 LISTA DE DESAFIOS EM PYTHON
 
-
-
 --- respondendo ao usuário
 
 01 - crie um script python que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas de acordo com o valor digitado
@@ -12,7 +10,7 @@ nome = input ('Qual é o seu nome? ')
 
 print('Olá ' + nome + ', Prazer em te conhecer"')
 
-
+-----------------------------------------------
 
 --- data formatada
 
@@ -28,7 +26,7 @@ ano = input ('Ano = ')
 
 print('Você nasceu no ' + dia + ' de' + mes + ' de' + ano + ', Certo?')
 
-
+-------------------------
 
 --- somando números
 
@@ -44,7 +42,7 @@ soma = (int(num1) + int(num2))
 
 print('A soma é: ' + str(soma))
 
-
+--------------------------------------
 
 print('=========== DESAFIO 03 ===========')
 
@@ -56,7 +54,7 @@ soma = (int(num1) + int(num2))
 
 print('A soma entre ', num1 , ' e ', num2, 'vale' + str(soma))
 
-
+------------------------
 
 print('=========== DESAFIO 03 ===========')
 
@@ -68,7 +66,7 @@ soma = (int(num1) + int(num2))
 
 print('A soma entre {} e {} vale {}'.format(num1, num2, soma))
 
-
+--------------------------
 
 --- somando números
 
@@ -84,7 +82,7 @@ soma = num1 + num2
 
 print('A soma entre {} e {} vale {}'.format(num1, num2, soma))
 
-
+------------------
 
 --- dissecando uma variável
 
@@ -110,7 +108,7 @@ print('Esta em minúsculas? ', algo.islower())
 
 print('Esta capitalizada? ', algo.istitle())
 
-
+-----------------
 
 --- sucessor e antecessor
 
@@ -130,7 +128,7 @@ n = int(input('Digite um número: '))
 
 print('O número digitado foi: {}, O número anterior ao digitado é: {}, O número sucessor ao digitado é: {}'.format(n, (n-1), (n-2)))
 
-
+----------
 
 --- dobro, triplo e raiz quadrada
 
@@ -148,7 +146,7 @@ print('O número digitado foi: {}'.format(n))
 
 print('O dobro do valor digitado é: {}, O triplo do valor digitado é: {}, A raiz quadrada desse valor é: {}'.format(dobro, triplo, raiz))
 
-
+----------
 
 --- média aritimética
 
@@ -164,11 +162,11 @@ media = (n1 + n2) * 2
 
 print('A média do aluno {} foi de {}'.format(aluno, media))
 
-
+-------------
 
 --- conversor de medidas
 
-09 - escreva um programa que leia um valor em metros e o exiba convertido em centimetros e milimetros
+09 - escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros
 
 m = float(input('Digite um valor para ser convertido: '))
 
@@ -182,7 +180,7 @@ dc = m * 10
 
 print('Valor em m² {}\nValor em Centímetros {}\nValor em Milímetros {}\nValor em KM {}\nValor em Decímetro {}'.format(m, cm, mm, km, dc))
 
-
+-----------
 
 --- tabuada
 
@@ -262,7 +260,7 @@ print(n, ' x {:2} = {}'.format(10, n*10))
 
 print('-'*12)
 
-
+----------------
 
 --- conversor de moedas
 
@@ -274,7 +272,7 @@ dolar = real / 3.27
 
 print('Com R${} você pode comprar US$ {}'.format(real, dolar)) 
 
-
+------------
 
 --- pintando parede
 
@@ -292,7 +290,7 @@ tinta = area / 2
 
 print('Para pintar a parede será necessário {} litros de tinta.'.format(tinta))
 
-
+----------
 
 --- calculando descontos 
 
@@ -306,7 +304,7 @@ d = p * 5 / 100
 
 print('O produto que custava {:.2f}, na promoção com 5% de desconto custará {:.2f}. E seu desconto foi de: {:.2f}.'.format(p, pd, d))
 
-
+-------------
 
 --- reajuste salarial
 
@@ -322,7 +320,7 @@ a = s * 15 / 100
 
 print('O salário original do funcionário {} é R$ {:.2f}, O seu salário com aumento de 15% passa a ser de: R$ {:.2f}.\nO auamento no salário foi de: R$ {:.2f}.'.format(f, s, sa, a))
 
-
+--------------
 
 --- conversor de temperaturas
 
@@ -334,7 +332,7 @@ f = 9 * c / 5 + 32
 
 print('A temperatura de {}°C corresponde a {}°F!'.format(c, f))
 
-
+-----------
 
 --- aluguel de carros
 
@@ -348,7 +346,7 @@ pago = (dias * 60) + (km * 0.15)
 
 print('O equivalente ao aluguel do carro por {} dias e com {} km rodados ficará no valor de R$ {:.2f}.'. format(dias, km, pago))
 
-
+-----------
 
 --- quebrando um número
 
@@ -365,3 +363,150 @@ print('O número digitado foi {}, e seu valor inteiro é {}'.format(num, trunc(n
 num = float(input('Digite um valor: '))
 
 print('O valor digitado foi {} e sua parte inteira é {}'.format(num, int(num))
+
+-------------
+
+--- catetos e hipotenusa
+
+17 - faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retângulo, calcule e mostre o comprimento da hipotenusa
+
+
+
+from math import sqrt
+
+cateto1 = float(input('Digite o valor do cateto A: '))
+
+cateto2 = float(input('Digite o valor do cateto B: '))
+
+hipotenusa = (cateto1 * cateto1) + (cateto2 * cateto2)
+
+print('Valor do Cateto A: {}\nValor do Cateto B: {}\nValor da Hipotenusa: {:.4f}'.format(cateto1, cateto2, sqrt(hipotenusa)))
+
+
+
+cateto1 = float(input('Digite o valor do cateto A: '))
+
+cateto2 = float(input('Digite o valor do cateto B: '))
+
+hipotenusa = (cateto1 ** 2 + cateto2 ** 2) ** (1/2)
+
+print('Valor do Cateto A: {}\nValor do Cateto B: {}\nValor da Hipotenusa: {:.2f}'.format(cateto1, cateto2, hipotenusa))
+
+
+
+from math import hypot
+
+cateto1 = float(input('Digite o valor do cateto A: '))
+
+cateto2 = float(input('Digite o valor do cateto B: '))
+
+hipotenusa = hypot(cateto1, cateto2)
+
+print('Valor do Cateto A: {}\nValor do Cateto B: {}\nValor da Hipotenusa: {:.2f}'.format(cateto1, cateto2, hipotenusa))
+
+----------
+
+--- seno, cosseno e tangente
+
+18 - faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo
+
+
+
+from math import hypot
+
+co = float(input('Digite o valor do cateto oposto: '))
+
+ca = float(input('Digite o valor do cateto adjacente: '))
+
+hi = hypot(co, ca)
+
+sen = co / hi
+
+cos = ca / hi
+
+tg = co / ca
+
+print('Valor do Cateto A: {}\nValor do Cateto B: {}\nValor da Hipotenusa: {:.2f}\nValor do Seno: {:.3f}\nValor do Cosseno: {:.3f}\nValor da Tangente: {:.3f}'.format(co, ca, hi, sen, cos, tg))
+
+
+
+from math import radians, sin, cos, tan
+
+angulo = float(input('Digite o ângulo: '))
+
+seno = sin(radians(angulo))
+
+cos = cos(radians(angulo))
+
+tg = tan(radians(angulo))
+
+print('O valor de {}° tem o:\nSeno: {:.2f}\nCosseno: {:.2f}\nTangente: {:.2f}'.format(angulo, seno, cos, tg))
+
+--------
+
+--- sorteando um item na lista
+
+19 - um professor quer sortear um dos seus quatro alunos para apagar o quadro. faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido
+
+--- utilizando modulo choice(escolha) escolhe um entre todos
+
+from random import choice
+
+a1 = input('Primeiro nome: ')
+
+a2 = input('Segundo nome: ')
+
+a3 = input('Terceiro nome: ')
+
+a4 = input('Quarto nome: ')
+
+lista = [a1, a2, a3, a4]
+
+escolhido = choice(lista)
+
+print('O escolhido para apagar o quadro foi: {}'.format(escolhido))
+
+----
+
+--- sorteando uma ordem na lista
+
+20 - o mesmo professor quer sortear a ordem de apresentação dos trabalhos de alunos. faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada
+
+--- utilizando modulo shuffle(embaralhar)embaralha os nomes
+
+from random import shuffle
+
+a1 = input('Primeiro nome: ')
+
+a2 = input('Segundo nome: ')
+
+a3 = input('Terceiro nome: ')
+
+a4 = input('Quarto nome: ')
+
+lista = [a1, a2, a3, a4]
+
+shuffle(lista)
+
+print('A ordem de apresentação do trabalho será: ')
+
+print(lista)
+
+----
+
+--- tocando um MP3
+
+21 - faça um programa em python que abra e reproduza o aúdio de um arquivo MP3
+
+import pygame
+
+pygame.init()
+
+pygame.mixer.music.load("undertale.mp3")
+
+pygame.mixer.music.play()
+
+pygame.event.wait()
+
+---------
+
