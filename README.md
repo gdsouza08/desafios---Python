@@ -1606,7 +1606,7 @@ print('ACABOU')
 
 print('\n\n', tipo)
 
-
+-------------
 
 --- numeros primos
 
@@ -1640,7 +1640,7 @@ else:
 
   print('E por isso ele NÃO É PRIMO.')
 
-
+---------------
 
 --- palíndromo
 
@@ -1688,7 +1688,7 @@ else:
 
   print('Não temos palíndromo.')
 
-  
+----------
 
 --- maioridade
 
@@ -1722,9 +1722,9 @@ print('\033[33m{} pessoas são menores de idade.\033[m'.format(totmenor))
 
 print('\033[32m{} pessoas são maiores de idade.\033[m'.format(totmaior))
 
+---------------------------------
 
-
---- maior e menor daa sequência
+--- maior e menor da sequência
 
 55 - faça um programa que leia o peso de cinco pessoas.no final mostre qual foi o maior e o menor peso.
 
@@ -1756,7 +1756,7 @@ print('\033[32mO maior peso lido foi de {}kg\033[m'.format(maior))
 
 print('\033[33mO menor peso lido foi de {}kg\033[m'.format(menor))
 
-
+--------------------------------------
 
 --- analisador completo
 
@@ -1814,7 +1814,7 @@ print('O homem mais velho tem {} anos e se chama {}'.format(maioridadehomem, nom
 
 print('Ao todo são {} mulheres com menos de 20 anos'.format(totmulher20))
 
-
+---------------------------
 
 --- validação de dados
 
@@ -1850,11 +1850,11 @@ while sexo not in 'MF':
 
 print('Sexo {} registrado com sucessso.'.format(sexo))
 
-
+---------------------------------
 
 --- jogo da adivinhação v2.0
 
-58 - melhore o jogo do desafio 028 onde o computador vai 'pensar' em um número entre 0 e 10. só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantas tentativas foram necessarias.
+58 - melhore o jogo do desafio 028 onde o computador vai 'pensar' em um número entre 0 e 10. só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantas tentativas foram necessárias.
 
 from random import randint
 
